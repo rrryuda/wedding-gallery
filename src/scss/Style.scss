@@ -1,6 +1,6 @@
 // Variables - Font
 :root {
-	font-family: Inter, 'IBM Plex Sans KR', sans-serif;
+	font-family: 'Noto Serif KR', sans-serif;
 	font-feature-settings: 'liga' 1, 'calt' 1;
 	font-size: var(--font-size);
 	font-weight: 400;
@@ -14,11 +14,6 @@
 	-ms-text-size-adjust: 100;
 	-o-text-size-adjust: 100;
 	-moz-osx-font-smoothing: grayscale;
-
-	@supports (font-variation-settings: normal) {
-		font-family: InterVariable, 'IBM Plex Sans KR', sans-serif;
-		font-feature-settings: 'liga' 1, 'calt' 1, 'case' 1, 'tnum' 1, 'ss01' 1, 'ss07' 1, 'ss08' 1;
-	}
 }
 
 // Variables - Size
@@ -41,7 +36,7 @@
 	--display-size: 12rem;
 	--display-weight: 700;
 	--display-height: 1;
-	--display-spacing: .05em;
+	--display-spacing: 0;
 
 	--title-size: 3rem;
 	--title-weight: 500;
@@ -105,11 +100,11 @@
 	--yellow-color: #FFC800;
 	--black-rgb: 0, 0, 0;
 	--black-color: #000000;
-	--foreground-rgb: 255, 255, 255;
+	--foreground-rgb: 0, 0, 0;
 	--foreground-color: rgb(var(--foreground-rgb));
 	--foreground-dimmed-color: rgba(var(--foreground-rgb), .5);
 	--foreground-tint-color: rgba(var(--foreground-rgb), .1);
-	--background-rgb: 0, 0, 0;
+	--background-rgb: 244, 240, 232;
 	--background-color: rgb(var(--background-rgb));
 	--background-dimmed-color: rgba(var(--background-rgb), .5);
 	--tag-background-color: rgba(var(--foreground-rgb), .2);

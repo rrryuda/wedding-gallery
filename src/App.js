@@ -20,7 +20,6 @@ const App = () => {
   return (
     <ReactLenis root>
       <HashRouter basename={process.env.PUBLIC_URL}>
-
         {/* Common Components */}
         <MetaTheme />
         <ScrollToTop />
