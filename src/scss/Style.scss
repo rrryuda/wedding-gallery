@@ -55,15 +55,10 @@
 	--white-color: #FFFFFF;
 	--black-rgb: 0, 0, 0;
 	--black-color: #000000;
-	--foreground-rgb: 0, 0, 0;
+	--foreground-rgb: 255, 255, 255;
 	--foreground-color: rgb(var(--foreground-rgb));
-	--foreground-dimmed-color: rgba(var(--foreground-rgb), .5);
-	--foreground-tint-color: rgba(var(--foreground-rgb), .1);
-	--background-rgb: 244, 240, 232;
+	--background-rgb: 0, 0, 0;
 	--background-color: rgb(var(--background-rgb));
-	--background-dimmed-color: rgba(var(--background-rgb), .5);
-	--tag-background-color: rgba(var(--foreground-rgb), .2);
-	--border-color: rgba(var(--foreground-rgb), .2);
 }
 
 // Fonts Style

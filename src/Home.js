@@ -5,13 +5,13 @@ import React from 'react';
 import Cell from './component/Cell';
 import Footer from './component/Footer';
 import Img from './component/Img';
-import Slot from './component/Slot';
+import RImg from './component/RImg';
 import Section from './component/Section';
 import Text from './component/Text';
 import Title from './component/Title';
 
 // Img
-import ph from './source/placeholderr.jpg';
+import ph from './source/placeholder-01.jpg';
 
 // Home
 const Home = () => {
@@ -20,7 +20,11 @@ const Home = () => {
     <>
       {/* Hero */}
       <Section config="-hero">
-        <Title config="-display" content="We are getting married" />
+        <Cell>
+          <span>昇鉉</span>
+          <span>& 銀正</span>
+        </Cell>
+        <RImg />
       </Section>
 
       {/* Lastest Works */}
@@ -36,7 +40,6 @@ const Home = () => {
 
       {/* Cover */}
       <Section config="-cover">
-        <Slot />
         <Img src={ph} />
       </Section>
 

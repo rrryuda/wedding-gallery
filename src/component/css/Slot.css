@@ -1,1 +1,0 @@
-.slot{grid-column:1/-1;display:flex;align-items:center;width:100%}.slot ul{display:flex;align-items:center;width:auto;will-change:transform;transform:translate3d(-100%, 0, 0);animation:slotSlide 60s linear infinite}@keyframes slotSlide{0%{transform:translate3d(-100%, 0, 0)}100%{transform:translate3d(-200%, 0, 0)}}.slot ul li{margin-right:1rem}
