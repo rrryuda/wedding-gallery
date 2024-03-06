@@ -5,7 +5,7 @@ section {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	align-items: flex-start;
-	column-gap: 1rem;
+	gap: 2rem;
 	width: 100%;
 	padding: 4rem var(--margin);
 	background: var(--background-color);
@@ -18,12 +18,12 @@ section {
 		}
 	}
 
-	@media screen and (max-width: 820px) {
-		grid-template-columns: 100%;
+	&.-cover {
+		display: block;
+		padding: unset;
+	}
 
-		&.-large {
-			padding-top: 4rem;
-			padding-bottom: 4rem;
-		}
+	@media screen and (max-width: 1024px) {
+		grid-template-columns: 100%;
 	}
 }

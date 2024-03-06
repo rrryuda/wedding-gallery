@@ -3,7 +3,6 @@ import React, { useEffect } from 'react';
 
 // Component
 import Cell from './component/Cell';
-import LinkText from './component/LinkText';
 import Section from './component/Section';
 
 // NotFound
@@ -33,7 +32,6 @@ const NotFound = () => {
         <h1>404</h1>
         <Cell config="-fill -center">
           <h2>Page Not Found</h2>
-          <LinkText type="a" to="/" content="Back to home ↗" hover="Back to home ↗" />
         </Cell>
       </Section>
     </>

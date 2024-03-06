@@ -12,79 +12,28 @@
 		span {
 			display: flex;
 			align-items: center;
-			height: calc(var(--font-size) * var(--font-height));
+			height: 1.5em;
 
 			&::after {
 				background-color: var(--foreground-color);
 				border-radius: 50%;
 				content: '';
 				display: block;
-				height: .375em;
-				width: .375em;
+				height: .25em;
+				width: .25em;
 			}
 		}
 	}
 
-	&.-dim {
-		opacity: .5;
-	}
-
-	&.-end {
-		text-align: end;
-	}
-
 	&.-headline {
-		font-size: var(--headline-size);
-		font-weight: var(--font-weight);
-		letter-spacing: var(--font-label-spacing);
-		line-height: var(--headline-height);
-
-		&:has(span) span {
-			height: calc(var(--headline-size) * var(--headline-height));
-		}
-	}
-
-	&.-headline-sub {
-		font-size: var(--headline-sub-size);
-		font-weight: var(--headline-sub-weight);
-		letter-spacing: var(--headline-sub-spacing);
-		line-height: var(--headline-sub-height);
-
-		&:has(span) span {
-			height: calc(var(--headline-sub-size) * var(--headline-sub-height));
-		}
-	}
-
-	&.-label {
-		font-size: var(--font-label-size);
-		font-weight: var(--font-label-weight);
-		letter-spacing: var(--font-label-spacing);
-		line-height: var(--font-label-height);
-
-		&:has(span) span {
-			height: calc(var(--font-label-size) * var(--font-label-height));
-		}
+		font-size: 2rem;
+		font-weight: 500;
+		line-height: 1.5;
 	}
 
 	&.-sub {
-		font-size: var(--font-sub-size);
-		font-weight: var(--font-sub-weight);
-		letter-spacing: var(--font-sub-spacing);
-		line-height: var(--font-sub-height);
-		text-wrap: nowrap;
-
-		&:has(span) span {
-			height: calc(var(--font-sub-size) * var(--font-sub-height));
-		}
-	}
-
-	@media screen and (max-width: 820px) {
-		&.-end {
-			text-align: start;
-		}
-
-		&.-hidden {
-			display: none;
-		}
+		font-size: .875rem;
+		font-weight: 500;
+		line-height: 1.5;
 	}
 }
