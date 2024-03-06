@@ -1,0 +1,48 @@
+// Nav
+header,
+footer {
+	.text {
+		font-size: 14px;
+		font-weight: 550;
+		line-height: 1;
+	}
+}
+
+// Header
+header {
+	position: fixed;
+	z-index: 999;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 1rem;
+	background: var(--background-color);
+
+	a {
+		width: 4rem;
+	}
+
+	:nth-child(2) {
+		text-align: center;
+	}
+
+	:nth-child(3) {
+		text-align: end;
+	}
+}
+
+// Footer
+footer {
+	position: fixed;
+	z-index: 999;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 1rem;
+}

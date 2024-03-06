@@ -1,1 +1,1 @@
-.cell{position:relative;display:flex;flex-direction:column;width:100%}.cell.-hero{align-items:center}
+.cell{position:relative;display:flex;flex-direction:column}.cell.-content{gap:2rem}.cell.-index{flex-direction:row;gap:1rem}.cell.-center{align-items:center;justify-content:center}.cell.-gap-s{gap:.5rem}.cell.-gap-m{gap:1rem}

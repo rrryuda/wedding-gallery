@@ -3,9 +3,26 @@
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	width: 100%;
 
-	&.-hero {
+	&.-content {
+		gap: 2rem;
+	}
+
+	&.-index {
+		flex-direction: row;
+		gap: 1rem;
+	}
+
+	&.-center {
 		align-items: center;
+		justify-content: center;
+	}
+
+	&.-gap-s {
+		gap: .5rem;
+	}
+
+	&.-gap-m {
+		gap: 1rem;
 	}
 }

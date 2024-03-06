@@ -5,10 +5,10 @@ import React from 'react';
 import './css/Section.css';
 
 // Section
-const Section = ({ config, children }) => {
+const Section = ({ config, id, children }) => {
 
   return (
-    <section className={config}>
+    <section className={config} id={id}>
       {children}
     </section>
   );

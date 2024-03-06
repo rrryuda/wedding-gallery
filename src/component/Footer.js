@@ -2,16 +2,19 @@
 import React from 'react';
 
 // Component
-import Section from './Section';
 import Text from './Text';
+
+// CSS
+import './css/Nav.css';
 
 // Footer
 const Footer = () => {
 
   return (
-    <Section>
-      <Text config="-sub">©2024</Text>
-    </Section>
+    <footer>
+      <Text type="a">청와대 대통령실</Text>
+      <Text type="a">12/9(목) 3:00 PM</Text>
+    </footer>
   );
 }
 

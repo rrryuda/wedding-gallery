@@ -2,40 +2,83 @@
 section {
 	position: relative;
 	z-index: 1;
-	display: flex;
 	width: 100%;
-	padding: 4rem var(--margin);
+	padding: var(--margin-row) var(--margin);
 	background: var(--background-color);
 	overflow: hidden;
 
 	&.-hero {
+		display: flex;
 		align-items: center;
 		justify-content: center;
 		height: 100vh;
 
-		.cell {
-			align-items: center;
+		span {
+			position: absolute;
+			font-size: 12vw;
+			text-wrap: nowrap;
 
-			span {
-				font-size: 12vw;
+			&:nth-of-type(1) {
+				left: 24%;
+				transform: translate3d(0, -14rem, 0);
+			}
+
+			&:nth-of-type(2) {
+				right: 24%;
+				transform: translate3d(0, 14rem, 0);
+			}
+
+			@media screen and (max-width: 768px) {
+				font-size: 6rem;
+
+				&:nth-of-type(1) {
+					left: 12%;
+					transform: translate3d(0, -14rem, 0);
+				}
+
+				&:nth-of-type(2) {
+					right: 12%;
+					transform: translate3d(0, 14rem, 0);
+				}
+			}
+
+			@media screen and (max-height: 720px) {
+				&:nth-of-type(1) {
+					transform: translate3d(0, -9rem, 0);
+				}
+
+				&:nth-of-type(2) {
+					transform: translate3d(0, 9rem, 0);
+				}
 			}
 		}
 	}
 
+	&.-intro {
+		display: grid;
+		grid-template-columns: 3.5fr 4fr .5fr;
+		gap: 2rem 1rem;
+
+		@media screen and (max-width: 1440px) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		@media screen and (max-width: 768px) {
+			grid-template-columns: 100%;
+		}
+	}
+
 	&.-cover {
-		display: block;
 		padding: unset;
 	}
 
-	@media screen and (max-width: 1024px) {
-		grid-template-columns: 100%;
-	}
-}
+	&.-grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 2rem 1rem;
 
-// Cell
-.cell {
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	width: 100%;
+		@media screen and (max-width: 544px) {
+			grid-template-columns: 100%;
+		}
+	}
 }

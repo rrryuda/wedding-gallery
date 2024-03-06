@@ -1,88 +1,21 @@
 // Img
 .img {
-	padding-top: 56.25%;
-	overflow: hidden;
+	position: relative;
 
 	&.-landscape {
-		padding-top: 28.125%;
-	}
-
-	&.-portrait {
-		width: calc((100% - 1rem * .5) * .25);
-		padding: unset;
-
-		img {
-			position: relative;
-			left: auto;
-			top: auto;
-			transform: unset;
-		}
-	}
-
-	&.-screen {
-		padding-top: 75%;
+		padding-top: 40%;
 	}
 
 	&.-square {
 		padding-top: 100%;
 	}
 
-	div {
-		position: absolute;
-		z-index: 1;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		top: 50%;
-		left: 50%;
-		transform: translate3d(-50%, -50%, 0);
-		overflow: hidden;
-		pointer-events: none;
-
-		span {
-			color: var(--white-color);
-			font-size: var(--font-size);
-			font-weight: var(--font-weight);
-			letter-spacing: var(--font-spacing);
-			line-height: var(--font-height);
-			text-transform: uppercase;
-			text-wrap: nowrap;
-			will-change: transform, opacity;
-			transform: translate3d(0, 100%, 0);
-			transition: transform .6s var(--ease), opacity .6s var(--ease);
-			opacity: 0;
-		}
-	}
-
 	img {
-		display: block;
-		left: 50%;
 		position: absolute;
 		top: 50%;
-		will-change: transform, filter;
+		left: 50%;
 		transform: translate3d(-50%, -50%, 0);
-		transition: transform .6s var(--ease), filter .6s var(--ease);
-		pointer-events: none;
-	}
-
-	@media screen and (max-width: 1440px) {
-		&.-landscape {
-			padding-top: 56.25%;
-		}
-	}
-}
-
-// Hover
-.-hover {
-	.img {
-		div span {
-			transform: translate3d(0, 0, 0);
-			opacity: 1;
-		}
-
-		img {
-			filter: brightness(64%);
-			transform: translate3d(-50%, -50%, 0) scale(108%);
-		}
+		object-fit: cover;
+		object-position: center center;
 	}
 }

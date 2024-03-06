@@ -2,7 +2,7 @@
 import React from 'react';
 
 // CSS
-import './css/RImg.css';
+import './css/RElement.css';
 
 // Img
 import img01 from './source/placeholder-01.jpg';

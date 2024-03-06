@@ -1,10 +1,11 @@
 // React
 import React from 'react';
 
+// CSS
+import './css/Cell.css';
+
 // Cell
 const Cell = ({ config, children }) => {
-
-  // Construct the classes
   const classes = config ? `cell ${config}` : 'cell';
 
   return (

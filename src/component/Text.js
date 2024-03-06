@@ -5,16 +5,15 @@ import React from 'react';
 import './css/Text.css';
 
 // Text
-const Text = ({ config, bullet, children }) => {
-
-  // Construct the classes
+const Text = ({ config, type, bullet, children }) => {
+  const Tag = type || 'p';
   const classes = config ? `text ${config}` : 'text';
 
   return (
-    <p className={classes}>
+    <Tag className={classes}>
       {bullet && <span></span>}
       {children}
-    </p>
+    </Tag>
   );
 }
 

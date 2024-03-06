@@ -7,7 +7,7 @@
 
 	&:has(span) {
 		display: flex;
-		gap: .75em;
+		gap: .5em;
 
 		span {
 			display: flex;
@@ -26,14 +26,24 @@
 	}
 
 	&.-headline {
-		font-size: 2rem;
-		font-weight: 500;
-		line-height: 1.5;
+		font-size: var(--subheadline-size);
+		font-weight: var(--subheadline-weight);
+		letter-spacing: var(--subheadline-spacing);
+		line-height: var(--subheadline-height);
 	}
 
 	&.-sub {
-		font-size: .875rem;
-		font-weight: 500;
-		line-height: 1.5;
+		font-size: var(--subtext-size);
+		font-weight: var(--subtext-weight);
+		letter-spacing: var(--subtext-spacing);
+		line-height: var(--subtext-height);
+	}
+
+	&.-center {
+		text-align: center;
+	}
+
+	&.-dim {
+		opacity: .5;
 	}
 }

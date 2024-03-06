@@ -5,17 +5,12 @@ import React from 'react';
 import './css/Img.css';
 
 // Img
-const Img = ({ config, title, src }) => {
-
-  // Construct the classes
+const Img = ({ config, src }) => {
   const classes = config ? `img ${config}` : 'img';
 
   return (
     <picture className={classes}>
-      <div>
-        <span>{title}</span>
-      </div>
-      <img src={src} alt={title} />
+      <img src={src} />
     </picture>
   );
 }
