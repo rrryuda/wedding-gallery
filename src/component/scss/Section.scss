@@ -15,47 +15,16 @@ section {
 
 		.cell {
 			position: absolute;
-			top: 1rem;
+			top: 1.5rem;
 		}
 
 		span {
 			position: absolute;
 			font-size: 12vw;
+			font-weight: var(--display-weight);
+			line-height: var(--display-height);
+			letter-spacing: var(--display-spacing);
 			text-wrap: nowrap;
-
-			&:nth-of-type(1) {
-				left: 24%;
-				transform: translate3d(0, -14rem, 0);
-			}
-
-			&:nth-of-type(2) {
-				right: 24%;
-				transform: translate3d(0, 14rem, 0);
-			}
-
-			@media screen and (max-width: 768px) {
-				font-size: 6rem;
-
-				&:nth-of-type(1) {
-					left: 12%;
-					transform: translate3d(0, -14rem, 0);
-				}
-
-				&:nth-of-type(2) {
-					right: 12%;
-					transform: translate3d(0, 14rem, 0);
-				}
-			}
-
-			@media screen and (max-height: 720px) {
-				&:nth-of-type(1) {
-					transform: translate3d(0, -9rem, 0);
-				}
-
-				&:nth-of-type(2) {
-					transform: translate3d(0, 9rem, 0);
-				}
-			}
 		}
 	}
 
@@ -63,6 +32,7 @@ section {
 		display: grid;
 		grid-template-columns: 3.5fr 4fr .5fr;
 		gap: 2rem 1rem;
+		padding-top: var(--margin-row);
 
 		@media screen and (max-width: 1440px) {
 			grid-template-columns: repeat(2, 1fr);
@@ -70,6 +40,7 @@ section {
 
 		@media screen and (max-width: 768px) {
 			grid-template-columns: 100%;
+			padding-top: unset;
 		}
 	}
 
@@ -80,76 +51,15 @@ section {
 	&.info {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
-		gap: 0 1rem;
-	}
-
-	&.contact {
-		.cell.item {
-			display: grid;
-			grid-template-columns: 2fr 1fr 1fr;
-			align-items: center;
-			gap: .25rem 1rem;
-			padding: 2rem 0;
-			border-top: 1px solid var(--border-color);
-
-			.cell.-index:last-child {
-				justify-content: flex-end;
-			}
-
-			@media screen and (max-width: 1440px) {
-				grid-template-columns: repeat(3, 1fr);
-
-				.cell.-index:last-child {
-					justify-content: flex-start;
-				}
-			}
-
-			@media screen and (max-width: 768px) {
-				grid-template-columns: 100%;
-
-				h2 {
-					margin-bottom: 1rem;
-				}
-			}
-		}
-	}
-}
-
-// Cell
-.cell {
-	position: relative;
-	display: flex;
-	flex-direction: column;
-
-	&.-head {
-		grid-column: 1 / -1;
-		margin-bottom: 2rem;
-	}
-
-	&.-index {
-		flex-direction: row;
-		align-items: center;
-		gap: 1rem;
-	}
-
-	&.-center {
-		align-items: center;
-		justify-content: center;
-	}
-
-	&.-gap-s {
 		gap: .5rem;
+		padding: unset;
 	}
 
-	&.-gap-m {
-		gap: 1rem;
+	&#gallery {
+		padding-bottom: unset;
 	}
 
-	&.-gap-l {
-		gap: 2rem;
-	}
-
-	&.-fill {
-		grid-column: 1 / -1;
+	&#map {
+		padding-bottom: unset;
 	}
 }

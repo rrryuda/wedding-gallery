@@ -1,8 +1,6 @@
 // React
 import React from 'react';
-
-// Component
-import Text from './Text';
+import { useLenis } from '@studio-freight/react-lenis';
 
 // CSS
 import './css/Nav.css';
@@ -10,9 +8,15 @@ import './css/Nav.css';
 // Footer
 const Footer = () => {
 
+  const lenis = useLenis()
+
+  const top = () => {
+    lenis.scrollTo(0);
+  };
+
   return (
     <footer>
-      <Text config="-subtext">©2025</Text>
+      <a onClick={top}>©2025 Shawn</a>
     </footer>
   );
 }

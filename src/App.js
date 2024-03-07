@@ -32,8 +32,7 @@ const App = () => {
         <Cell config="-center">
           <Text config="-subtext -dim">2025년 12월 9일 목요일 오후 3시</Text>
         </Cell>
-        <span>昇鉉</span>
-        <span>&銀正</span>
+        <span>우리 결혼합니다</span>
         <RImg />
       </Section>
 
@@ -41,7 +40,7 @@ const App = () => {
       <Section config="intro">
         <Cell>
           <Text>2025년 12월 9일 목요일 오후 3시</Text>
-          <Text type="a">청와대 대통령실</Text>
+          <Text type="a">신라호텔 3층</Text>
         </Cell>
         <h2>19년 2월 늦겨울, 찬바람을 뚫고 들어온 따사로운 봄바람같은 서로를 만났습니다. 이제는 그동안 사랑의 결실을 맺습니다.</h2>
       </Section>
@@ -55,49 +54,52 @@ const App = () => {
       </Section>
 
       {/* Info */}
+      <Section>
+        <Cell config="-center -gap-s">
+          <Cell config="-index">
+            <Text config="-headline">유재훈</Text>
+            <Text config="-headline">한은진</Text>
+            <Text config="-dim">의 차남</Text>
+            <Text config="-headline">승현</Text>
+          </Cell>
+          <Cell config="-index">
+            <Text config="-headline">최수종</Text>
+            <Text config="-headline">하희라</Text>
+            <Text config="-dim">의 장녀</Text>
+            <Text config="-headline">은희</Text>
+          </Cell>
+        </Cell>
+      </Section>
+
+      {/* Info */}
       <Section config="info">
-        <Cell config="-head">
-          <Text>소개</Text>
-        </Cell>
-        <Cell config="-gap-m">
-          <Img config="-square" src={ph2} title="Title" />
-          <h2>전태풍</h2>
-          <Cell>
-            <Text bullet={true}>父 홍길동</Text>
-            <Text bullet={true}>母 신사임당</Text>
-          </Cell>
-        </Cell>
-        <Cell config="-gap-m">
-          <Img config="-square" src={ph3} title="Title" />
-          <h2>전태풍</h2>
-          <Cell>
-            <Text bullet={true}>父 홍길동</Text>
-            <Text bullet={true}>母 신사임당</Text>
-          </Cell>
-        </Cell>
+        <Img config="-square" src={ph2} title="Title" />
+        <Img config="-square" src={ph3} title="Title" />
       </Section>
 
       {/* Gallery */}
-      <Section config="-gallery" id="gallery">
-        <Cell config="-head">
+      <Section id="gallery">
+        <Cell config="-head -center">
           <Text>갤러리</Text>
         </Cell>
+        <Img config="-square" src={ph3} title="Title" />
       </Section>
 
       {/* Map */}
-      <Section config="-map" id="map">
-        <Cell config="-head">
+      <Section id="map">
+        <Cell config="-head -center">
           <Text>오시는 길</Text>
         </Cell>
+        <Img config="-landscape" src={ph3} title="Title" />
       </Section>
 
       {/* Contact */}
-      <Section config="contact" id="contact">
-        <Cell config="-head">
+      <Section id="contact">
+        <Cell config="-head -center">
           <Text>연락처</Text>
         </Cell>
-        <Cell config="item">
-          <h2>홍길동</h2>
+        <Cell config="-list">
+          <h3>유승현</h3>
           <Cell config="-index">
             <Text config="-subtext -dim">전화</Text>
             <Text>010-1234-1234</Text>
@@ -107,8 +109,8 @@ const App = () => {
             <Text>신한 110-223-9938492</Text>
           </Cell>
         </Cell>
-        <Cell config="item">
-          <h2>김수현</h2>
+        <Cell config="-list">
+          <h3>최은희</h3>
           <Cell config="-index">
             <Text config="-subtext -dim">전화</Text>
             <Text>010-1234-1234</Text>
