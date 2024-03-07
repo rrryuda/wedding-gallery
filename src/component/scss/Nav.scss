@@ -1,25 +1,20 @@
 // Nav
 header,
 footer {
-	.text {
-		font-size: 14px;
-		font-weight: 550;
-		line-height: 1;
-	}
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	padding: 1rem var(--margin);
+	background: var(--background-color);
 }
 
 // Header
 header {
-	position: fixed;
+	position: sticky;
 	z-index: 999;
-	display: flex;
 	align-items: center;
-	justify-content: space-between;
 	top: 0;
 	left: 0;
-	width: 100%;
-	padding: 1rem;
-	background: var(--background-color);
 
 	a {
 		width: 4rem;
@@ -36,13 +31,7 @@ header {
 
 // Footer
 footer {
-	position: fixed;
-	z-index: 999;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	padding: 1rem;
+	align-items: flex-start;
+	padding-top: unset;
+	padding-bottom: var(--margin);
 }

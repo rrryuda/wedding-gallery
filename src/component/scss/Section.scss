@@ -7,11 +7,16 @@ section {
 	background: var(--background-color);
 	overflow: hidden;
 
-	&.-hero {
+	&.hero {
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		height: 100vh;
+
+		.cell {
+			position: absolute;
+			top: 1rem;
+		}
 
 		span {
 			position: absolute;
@@ -54,7 +59,7 @@ section {
 		}
 	}
 
-	&.-intro {
+	&.intro {
 		display: grid;
 		grid-template-columns: 3.5fr 4fr .5fr;
 		gap: 2rem 1rem;
@@ -68,17 +73,83 @@ section {
 		}
 	}
 
-	&.-cover {
+	&.cover {
 		padding: unset;
 	}
 
-	&.-grid {
+	&.info {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
-		gap: 2rem 1rem;
+		gap: 0 1rem;
+	}
 
-		@media screen and (max-width: 544px) {
-			grid-template-columns: 100%;
+	&.contact {
+		.cell.item {
+			display: grid;
+			grid-template-columns: 2fr 1fr 1fr;
+			align-items: center;
+			gap: .25rem 1rem;
+			padding: 2rem 0;
+			border-top: 1px solid var(--border-color);
+
+			.cell.-index:last-child {
+				justify-content: flex-end;
+			}
+
+			@media screen and (max-width: 1440px) {
+				grid-template-columns: repeat(3, 1fr);
+			}
+
+			@media screen and (max-width: 768px) {
+				grid-template-columns: 100%;
+
+				h2 {
+					margin-bottom: 1rem;
+				}
+
+				.cell.-index:last-child {
+					justify-content: flex-start;
+				}
+			}
 		}
+	}
+}
+
+// Cell
+.cell {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+
+	&.-head {
+		grid-column: 1 / -1;
+		margin-bottom: 2rem;
+	}
+
+	&.-index {
+		flex-direction: row;
+		align-items: center;
+		gap: 1rem;
+	}
+
+	&.-center {
+		align-items: center;
+		justify-content: center;
+	}
+
+	&.-gap-s {
+		gap: .5rem;
+	}
+
+	&.-gap-m {
+		gap: 1rem;
+	}
+
+	&.-gap-l {
+		gap: 2rem;
+	}
+
+	&.-fill {
+		grid-column: 1 / -1;
 	}
 }

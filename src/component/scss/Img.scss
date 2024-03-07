@@ -4,6 +4,10 @@
 
 	&.-landscape {
 		padding-top: 40%;
+
+		@media screen and (max-width: 768px) {
+			padding-top: 56.25%;
+		}
 	}
 
 	&.-square {

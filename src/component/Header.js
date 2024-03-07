@@ -12,9 +12,9 @@ const Header = () => {
 
   return (
     <header>
-      <Text type="a">연락처</Text>
-      <Text type="a">갤러리</Text>
-      <Text type="a">오시는 길</Text>
+      <Text config="-subtext" type="a" href="#gallery">갤러리</Text>
+      <Text config="-subtext" type="a" href="#map">오시는길</Text>
+      <Text config="-subtext" type="a" href="#contact">연락처</Text>
     </header>
   );
 }

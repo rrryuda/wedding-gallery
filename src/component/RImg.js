@@ -16,25 +16,25 @@ const RImg = () => {
     <div className="rimg">
       <ul>
         <li>
-          <img src={img01} />
-          <img src={img02} />
-          <img src={img03} />
-          <img src={img04} />
-          <img src={img05} />
+          <img src={img01} alt="" />
+          <img src={img02} alt="" />
+          <img src={img03} alt="" />
+          <img src={img04} alt="" />
+          <img src={img05} alt="" />
         </li>
         <li>
-          <img src={img01} />
-          <img src={img02} />
-          <img src={img03} />
-          <img src={img04} />
-          <img src={img05} />
+          <img src={img01} alt="" />
+          <img src={img02} alt="" />
+          <img src={img03} alt="" />
+          <img src={img04} alt="" />
+          <img src={img05} alt="" />
         </li>
         <li>
-          <img src={img01} />
-          <img src={img02} />
-          <img src={img03} />
-          <img src={img04} />
-          <img src={img05} />
+          <img src={img01} alt="" />
+          <img src={img02} alt="" />
+          <img src={img03} alt="" />
+          <img src={img04} alt="" />
+          <img src={img05} alt="" />
         </li>
       </ul>
     </div>

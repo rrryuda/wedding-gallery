@@ -32,7 +32,7 @@
 		line-height: var(--subheadline-height);
 	}
 
-	&.-sub {
+	&.-subtext {
 		font-size: var(--subtext-size);
 		font-weight: var(--subtext-weight);
 		letter-spacing: var(--subtext-spacing);
@@ -45,5 +45,11 @@
 
 	&.-dim {
 		opacity: .5;
+	}
+}
+
+a.text {
+	&:hover {
+		text-decoration: underline;
 	}
 }

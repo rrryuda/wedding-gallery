@@ -12,8 +12,7 @@ const Footer = () => {
 
   return (
     <footer>
-      <Text type="a">청와대 대통령실</Text>
-      <Text type="a">12/9(목) 3:00 PM</Text>
+      <Text config="-subtext">©2025</Text>
     </footer>
   );
 }
