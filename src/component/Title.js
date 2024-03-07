@@ -28,7 +28,7 @@ const Title = ({ config, content, translateY }) => {
               element.classList.add('-loaded');
 
               // Apply delay based on a fixed index (100ms interval)
-            }, index * 200);
+            }, index * 500);
             index++;
           });
 

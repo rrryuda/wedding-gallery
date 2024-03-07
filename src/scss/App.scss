@@ -12,27 +12,4 @@ body {
 	color: var(--foreground-color);
 	background: var(--background-color);
 	font-size: var(--font-size);
-
-	&.-error {
-		header {
-			display: none;
-		}
-
-		h1 {
-			position: absolute;
-			z-index: -1;
-			top: 0;
-			width: 100%;
-			font-size: 40vw;
-			font-weight: 450;
-			left: 0;
-			line-height: .6;
-			text-align: center;
-			opacity: .2;
-		}
-	}
-
-	.language {
-		display: none;
-	}
 }

@@ -6,14 +6,14 @@ import { Lenis } from '@studio-freight/react-lenis'
 import './css/App.css';
 
 // Component
-import MetaTheme from './component/MetaTheme';
 import Cell from './component/Cell';
-import RImg from './component/RImg';
-import Section from './component/Section';
-import Text from './component/Text';
+import Footer from './component/Footer';
 import Header from './component/Header';
 import Img from './component/Img';
-import Footer from './component/Footer';
+import MetaTheme from './component/MetaTheme';
+import SectionHero from './component/SectionHero';
+import Section from './component/Section';
+import Text from './component/Text';
 
 // Img
 import ph1 from './source/placeholder-01.jpg';
@@ -28,13 +28,7 @@ const App = () => {
       <MetaTheme />
 
       {/* Hero */}
-      <Section config="hero">
-        <Cell config="-center">
-          <Text config="-subtext -dim">2025년 12월 9일 목요일 오후 3시</Text>
-        </Cell>
-        <span>우리 결혼합니다</span>
-        <RImg />
-      </Section>
+      <SectionHero />
 
       {/* Intro */}
       <Section config="intro">
@@ -54,25 +48,39 @@ const App = () => {
       </Section>
 
       {/* Info */}
-      <Section>
-        <Cell config="-center -gap-s">
-          <Cell config="-index">
-            <Text config="-headline">유재훈</Text>
-            <Text config="-headline">한은진</Text>
-            <Text config="-dim">의 차남</Text>
-            <Text config="-headline">승현</Text>
+      <Section config="info">
+        <Cell config="-center">
+          <Cell config="-head">
+            <Text>소개</Text>
           </Cell>
-          <Cell config="-index">
-            <Text config="-headline">최수종</Text>
-            <Text config="-headline">하희라</Text>
-            <Text config="-dim">의 장녀</Text>
-            <Text config="-headline">은희</Text>
+          <Cell config="-center -gap-s">
+            <Cell config="-index">
+              <Text config="-subheadline">유재훈</Text>
+              <Text config="-subheadline">한은진</Text>
+              <Text config="-dim">의 차남</Text>
+              <Text config="-subheadline">승현</Text>
+            </Cell>
+            <Cell config="-index">
+              <Text config="-subheadline">최수종</Text>
+              <Text config="-subheadline">하희라</Text>
+              <Text config="-dim">의 장녀</Text>
+              <Text config="-subheadline">은희</Text>
+            </Cell>
+          </Cell>
+        </Cell>
+        <Cell config="-center">
+          <Cell config="-head">
+            <Text>일정</Text>
+          </Cell>
+          <Cell config="-center -gap-s">
+            <Text config="-subheadline">12월 9일 (목) 오후 3시</Text>
+            <Text config="">신라호텔 3층</Text>
           </Cell>
         </Cell>
       </Section>
 
       {/* Info */}
-      <Section config="info">
+      <Section config="portrait">
         <Img config="-square" src={ph2} title="Title" />
         <Img config="-square" src={ph3} title="Title" />
       </Section>

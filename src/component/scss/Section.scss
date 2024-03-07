@@ -13,18 +13,16 @@ section {
 		justify-content: center;
 		height: 100vh;
 
-		.cell {
+		.text {
 			position: absolute;
-			top: 1.5rem;
-		}
 
-		span {
-			position: absolute;
-			font-size: 10vw;
-			font-weight: var(--display-weight);
-			line-height: var(--display-height);
-			letter-spacing: var(--display-spacing);
-			text-wrap: nowrap;
+			&:nth-of-type(1) {
+				top: 2rem;
+			}
+
+			&:nth-of-type(2) {
+				bottom: 2rem;
+			}
 		}
 	}
 
@@ -32,7 +30,7 @@ section {
 		display: grid;
 		grid-template-columns: 3.5fr 4fr .5fr;
 		gap: 2rem 1rem;
-		padding-top: var(--margin-row);
+		padding-bottom: calc(var(--margin-row) * 2);
 
 		h2 {
 			font-weight: var(--font-weight);
@@ -49,21 +47,28 @@ section {
 	}
 
 	&.cover {
-		padding: unset;
+		padding-top: unset;
+		padding-right: unset;
+		padding-left: unset;
 	}
 
 	&.info {
+		display: flex;
+		flex-direction: column;
+		gap: var(--margin-row);
+	}
+
+	&.portrait {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		gap: .5rem;
-		padding: unset;
+		padding-right: unset;
+		padding-left: unset;
 	}
 
 	&#gallery {
-		padding-bottom: unset;
-	}
-
-	&#map {
-		padding-bottom: unset;
+		gap: .5rem;
+		padding-right: unset;
+		padding-left: unset;
 	}
 }

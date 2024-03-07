@@ -16,7 +16,7 @@ const Footer = () => {
 
   return (
     <footer>
-      <a onClick={top}>©2025 Shawn</a>
+      <a onClick={top}>©2025</a>
     </footer>
   );
 }

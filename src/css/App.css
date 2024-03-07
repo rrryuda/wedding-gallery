@@ -1,1 +1,1 @@
-html,body{position:relative;display:flex;flex-direction:column;width:100%}body{color:var(--foreground-color);background:var(--background-color);font-size:var(--font-size)}body.-error header{display:none}body.-error h1{position:absolute;z-index:-1;top:0;width:100%;font-size:40vw;font-weight:450;left:0;line-height:.6;text-align:center;opacity:.2}body .language{display:none}
+html,body{position:relative;display:flex;flex-direction:column;width:100%}body{color:var(--foreground-color);background:var(--background-color);font-size:var(--font-size)}

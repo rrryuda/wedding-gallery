@@ -26,6 +26,7 @@
                 object-position: center center;
                 object-fit: cover;
                 image-rendering: auto;
+                filter: saturate(72%) brightness(72%);
 
                 @media screen and (max-width: 768px) {
                     width: 16rem;
