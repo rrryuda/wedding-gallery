@@ -12,16 +12,8 @@
 		padding: 2rem 0;
 		border-top: 1px solid var(--border-color);
 
-		.-index:last-child {
-			justify-content: flex-end;
-		}
-
 		@media screen and (max-width: 1440px) {
 			grid-template-columns: repeat(3, 1fr);
-
-			.-index:last-child {
-				justify-content: flex-start;
-			}
 		}
 
 		@media screen and (max-width: 768px) {

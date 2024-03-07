@@ -20,7 +20,7 @@ section {
 
 		span {
 			position: absolute;
-			font-size: 12vw;
+			font-size: 10vw;
 			font-weight: var(--display-weight);
 			line-height: var(--display-height);
 			letter-spacing: var(--display-spacing);
@@ -33,6 +33,10 @@ section {
 		grid-template-columns: 3.5fr 4fr .5fr;
 		gap: 2rem 1rem;
 		padding-top: var(--margin-row);
+
+		h2 {
+			font-weight: var(--font-weight);
+		}
 
 		@media screen and (max-width: 1440px) {
 			grid-template-columns: repeat(2, 1fr);
