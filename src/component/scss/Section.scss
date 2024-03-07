@@ -98,6 +98,10 @@ section {
 
 			@media screen and (max-width: 1440px) {
 				grid-template-columns: repeat(3, 1fr);
+
+				.cell.-index:last-child {
+					justify-content: flex-start;
+				}
 			}
 
 			@media screen and (max-width: 768px) {
@@ -105,10 +109,6 @@ section {
 
 				h2 {
 					margin-bottom: 1rem;
-				}
-
-				.cell.-index:last-child {
-					justify-content: flex-start;
 				}
 			}
 		}

@@ -37,9 +37,6 @@ const App = () => {
         <RImg />
       </Section>
 
-      {/* Header */}
-      <Header />
-
       {/* Intro */}
       <Section config="intro">
         <Cell>
@@ -48,6 +45,9 @@ const App = () => {
         </Cell>
         <h2>19년 2월 늦겨울, 찬바람을 뚫고 들어온 따사로운 봄바람같은 서로를 만났습니다. 이제는 그동안 사랑의 결실을 맺습니다.</h2>
       </Section>
+
+      {/* Header */}
+      <Header />
 
       {/* Cover */}
       <Section config="cover">

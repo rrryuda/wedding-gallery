@@ -1,8 +1,6 @@
 // React
 import React from 'react';
-
-// Component
-import Text from '../component/Text';
+import { useLenis } from '@studio-freight/react-lenis';
 
 // CSS
 import './css/Nav.css';
@@ -10,11 +8,25 @@ import './css/Nav.css';
 // Header Component
 const Header = () => {
 
+  const lenis = useLenis()
+
+  const gallery = () => {
+    lenis.scrollTo('#gallery');
+  };
+
+  const map = () => {
+    lenis.scrollTo('#map');
+  };
+
+  const contact = () => {
+    lenis.scrollTo('#contact');
+  };
+
   return (
     <header>
-      <Text config="-subtext" type="a" href="#gallery">갤러리</Text>
-      <Text config="-subtext" type="a" href="#map">오시는길</Text>
-      <Text config="-subtext" type="a" href="#contact">연락처</Text>
+      <a href="#gallery" onClick={gallery}>갤러리</a>
+      <a href="#map" onClick={map}>오시는길</a>
+      <a href="#contact" onClick={contact}>연락처</a>
     </header>
   );
 }
