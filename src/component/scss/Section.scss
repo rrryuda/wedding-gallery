@@ -4,6 +4,7 @@ section {
 	width: 100%;
 	padding: var(--margin-row) var(--margin);
 	background: var(--background-color);
+	overflow: hidden;
 
 	&.intro {
 		display: grid;

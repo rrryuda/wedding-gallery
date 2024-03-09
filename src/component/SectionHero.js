@@ -4,7 +4,6 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 
 // Component
 import Section from './Section';
-import Text from './Text';
 
 // CSS
 import './css/SectionHero.css';
@@ -32,30 +31,28 @@ const SectionHero = () => {
 
   // Infinite Slide
   const slideInVariants = {
-    hidden: { x: '0%' },
-    visible: {
-      x: '-100%',
-      transition: { duration: 24, ease: "linear", repeat: Infinity }
+    hidden: { x: '0%' }, visible: {
+      x: '-100%', transition: { duration: 24, ease: "linear", repeat: Infinity }
     }
   };
 
   return (
     <>
       {/* Intro */}
-      <motion.div className="invite" initial={{ x: '-50%', y: '-100%', opacity: 0 }} animate={{ y: '0%', opacity: 1 }} style={{ opacity: inviteOpacity }} transition={{ duration: 0.4 }}>
-        <Text>귀하를 초대합니다</Text>
-      </motion.div>
+      <motion.p className="text -invite" initial={{ x: '-50%', y: '-100%', opacity: 0 }} animate={{ y: '0%', opacity: 1 }} style={{ opacity: inviteOpacity }} transition={{ duration: 0.4, delay: 0.6 }}>
+        우리의 시작을 축복해주세요
+      </motion.p>
 
       {/* Scroll Guide */}
-      <motion.div className="scroll" initial={{ x: '-50%', y: '100%', opacity: 0 }} animate={{ y: '0%', opacity: 0.5 }} style={{ opacity: scrollOpacity }} transition={{ duration: 0.4, delay: 0.6 }}>
-        <Text>스크롤해서 보기</Text>
-      </motion.div>
+      <motion.p className="text -scroll" initial={{ x: '-50%', y: '100%', opacity: 0 }} animate={{ y: '0%', opacity: 0.5 }} style={{ opacity: scrollOpacity }} transition={{ duration: 0.4, delay: 0.6 }}>
+        스크롤해서 보기 ↓
+      </motion.p>
 
       {/* Hero */}
       <Section config="hero">
 
         {/* Title */}
-        <motion.div className="title" initial={{ y: '80%', opacity: 0 }} animate={{ y: '0%', opacity: 1 }} transition={{ duration: 0.4, delay: 0.4 }}>
+        <motion.div className="title" initial={{ y: '100%', opacity: 0 }} animate={{ y: '0%', opacity: 1 }} transition={{ duration: 0.4, delay: 0.6 }}>
           <span>Shawn</span>
           <motion.div className="-glyph" initial={{ y: '0%' }} animate={{ y: '-50%' }} transition={{ ease: "anticipate", duration: 0.4, delay: 1.2 }}>
             <span>&</span>
