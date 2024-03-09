@@ -8,7 +8,7 @@ import Section from './Section';
 // CSS
 import './css/Nav.css';
 
-// Header Component
+// Header
 const Header = () => {
 
   const lenis = useLenis()

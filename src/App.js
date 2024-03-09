@@ -13,6 +13,7 @@ import Img from './component/Img';
 import SectionHero from './component/SectionHero';
 import Section from './component/Section';
 import Text from './component/Text';
+import Timer from './component/Timer';
 
 // Img
 import ph1 from './source/placeholder-01.jpg';
@@ -71,6 +72,7 @@ const App = () => {
             <Text>일정</Text>
           </Cell>
           <Cell config="-center -gap-s">
+            <Timer />
             <Text config="-subheadline">3월 1일 (목) 오후 3시</Text>
             <Text type="a" href="https://map.naver.com/p?c=15.00,0,0,0,dh">대한민국 국민호텔 3층</Text>
           </Cell>
