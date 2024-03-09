@@ -1,10 +1,39 @@
 // Nav
-header,
-footer {
+.nav {
 	display: flex;
 	width: 100%;
 	padding: 1rem var(--margin);
 	background: var(--background-color);
+
+	// Header
+	&.-header {
+		position: sticky;
+		z-index: 999;
+		align-items: center;
+		justify-content: space-between;
+		top: -1px;
+		left: 0;
+		padding-top: calc(1rem + 1px);
+
+		:nth-child(2) {
+			text-align: center;
+		}
+
+		:nth-child(3) {
+			text-align: end;
+		}
+	}
+
+	// Footer
+	&.-footer {
+		justify-content: center;
+		padding-top: unset;
+		padding-bottom: var(--margin);
+
+		a {
+			opacity: .56;
+		}
+	}
 
 	span {
 		font-size: var(--subtext-size);
@@ -12,35 +41,5 @@ footer {
 		letter-spacing: var(--subtext-spacing);
 		line-height: var(--subtext-height);
 		cursor: pointer;
-	}
-}
-
-// Header
-header {
-	position: sticky;
-	z-index: 999;
-	align-items: center;
-	justify-content: space-between;
-	top: -1px;
-	left: 0;
-	padding-top: calc(1rem + 1px);
-
-	:nth-child(2) {
-		text-align: center;
-	}
-
-	:nth-child(3) {
-		text-align: end;
-	}
-}
-
-// Footer
-footer {
-	justify-content: center;
-	padding-top: unset;
-	padding-bottom: var(--margin);
-
-	a {
-		opacity: .56;
 	}
 }

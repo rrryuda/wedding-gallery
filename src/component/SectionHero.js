@@ -21,12 +21,14 @@ const SectionHero = () => {
 
   // Parallax
   const { scrollYProgress } = useScroll();
-  const yRange = useTransform(scrollYProgress, [0, 0.5], ['0%', '100%']);
+  const yRange = useTransform(scrollYProgress, [0, 0.75], ['0%', '-100%']);
+  const sRange = useTransform(scrollYProgress, [0, 0.5], ['54rem', '27rem']);
+  const oRange = useTransform(scrollYProgress, [0, 0.125], ['1', '0']);
 
   // Opacity
   const { scrollY } = useScroll();
   const inviteOpacity = useTransform(scrollY, [0, 200], [1, 0]);
-  const scrollOpacity = useTransform(scrollY, [0, 100], [0.5, 0]);
+  const scrollOpacity = useTransform(scrollY, [0, 200], [0.5, 0]);
 
   // Infinite Slide
   const slideInVariants = {
@@ -40,12 +42,12 @@ const SectionHero = () => {
   return (
     <>
       {/* Intro */}
-      <motion.div className="invite" initial={{ x: '-50%', y: '-100%', opacity: 0 }} animate={{ y: '0%', opacity: 1 }} style={{ opacity: inviteOpacity }} transition={{ duration: 0.6 }}>
-        <Text>귀하를 초대합니다.</Text>
+      <motion.div className="invite" initial={{ x: '-50%', y: '-100%', opacity: 0 }} animate={{ y: '0%', opacity: 1 }} style={{ opacity: inviteOpacity }} transition={{ duration: 0.4 }}>
+        <Text>귀하를 초대합니다</Text>
       </motion.div>
 
       {/* Scroll Guide */}
-      <motion.div className="scroll" initial={{ x: '-50%', y: '100%', opacity: 0 }} animate={{ y: '0%', opacity: 0.5 }} style={{ opacity: scrollOpacity }} transition={{ duration: 0.6, delay: 0.8 }}>
+      <motion.div className="scroll" initial={{ x: '-50%', y: '100%', opacity: 0 }} animate={{ y: '0%', opacity: 0.5 }} style={{ opacity: scrollOpacity }} transition={{ duration: 0.4, delay: 0.6 }}>
         <Text>스크롤해서 보기</Text>
       </motion.div>
 
@@ -53,9 +55,9 @@ const SectionHero = () => {
       <Section config="hero">
 
         {/* Title */}
-        <motion.div className="title" initial={{ y: '100%', opacity: 0 }} animate={{ y: '0%', opacity: 1 }} transition={{ duration: 0.6, delay: 0.4 }}>
+        <motion.div className="title" initial={{ y: '80%', opacity: 0 }} animate={{ y: '0%', opacity: 1 }} transition={{ duration: 0.4, delay: 0.4 }}>
           <span>Shawn</span>
-          <motion.div className="-glyph" initial={{ y: '0%' }} animate={{ y: '-50%' }} transition={{ duration: 0.4, delay: 1.2 }}>
+          <motion.div className="-glyph" initial={{ y: '0%' }} animate={{ y: '-50%' }} transition={{ ease: "anticipate", duration: 0.4, delay: 1.2 }}>
             <span>&</span>
             <span>♥</span>
           </motion.div>
@@ -63,22 +65,22 @@ const SectionHero = () => {
         </motion.div>
 
         {/* Image */}
-        <motion.ul style={{ y: yRange }}>
-          <motion.li variants={slideInVariants} initial="hidden" animate="visible">
+        <motion.ul style={{ y: yRange, opacity: oRange }}>
+          <motion.li variants={slideInVariants} initial="hidden" animate="visible" style={{ height: sRange }}>
             <div><img src={img01} alt="" /></div>
             <div><img src={img02} alt="" /></div>
             <div><img src={img03} alt="" /></div>
             <div><img src={img04} alt="" /></div>
             <div><img src={img05} alt="" /></div>
           </motion.li>
-          <motion.li variants={slideInVariants} initial="hidden" animate="visible">
+          <motion.li variants={slideInVariants} initial="hidden" animate="visible" style={{ height: sRange }}>
             <div><img src={img01} alt="" /></div>
             <div><img src={img02} alt="" /></div>
             <div><img src={img03} alt="" /></div>
             <div><img src={img04} alt="" /></div>
             <div><img src={img05} alt="" /></div>
           </motion.li>
-          <motion.li variants={slideInVariants} initial="hidden" animate="visible">
+          <motion.li variants={slideInVariants} initial="hidden" animate="visible" style={{ height: sRange }}>
             <div><img src={img01} alt="" /></div>
             <div><img src={img02} alt="" /></div>
             <div><img src={img03} alt="" /></div>

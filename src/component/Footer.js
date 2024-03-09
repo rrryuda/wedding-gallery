@@ -2,6 +2,9 @@
 import React from 'react';
 import { useLenis } from '@studio-freight/react-lenis';
 
+// Component
+import Section from './Section';
+
 // CSS
 import './css/Nav.css';
 
@@ -15,9 +18,9 @@ const Footer = () => {
   };
 
   return (
-    <footer>
+    <Section config="nav -footer">
       <span onClick={top}>©2025</span>
-    </footer>
+    </Section>
   );
 }
 

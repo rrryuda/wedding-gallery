@@ -5,12 +5,12 @@ import React from 'react';
 import './css/Text.css';
 
 // Text
-const Text = ({ config, id, type, bullet, href, style, children }) => {
+const Text = ({ config, type, bullet, href, children }) => {
   const Tag = type || 'p';
   const classes = config ? `text ${config}` : 'text';
 
   return (
-    <Tag className={classes} id={id} href={href} style={style}>
+    <Tag className={classes} href={href} target="__blank">
       {bullet && <span></span>}
       {children}
     </Tag>
