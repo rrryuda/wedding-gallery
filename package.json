@@ -1,7 +1,8 @@
 {
-  "name": "invitation",
+  "name": "wedding-gallery",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://rrryuda.github.io/wedding-gallery/",
   "dependencies": {
     "@studio-freight/react-lenis": "^0.0.45",
     "@testing-library/jest-dom": "^5.17.0",
