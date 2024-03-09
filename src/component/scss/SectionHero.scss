@@ -111,7 +111,7 @@ section.hero {
 					will-change: transform, opacity;
 					opacity: 0;
 					animation: scaleUp 1s ease .8s forwards;
-					filter: saturate(50%) brightness(70%);
+					filter: saturate(80%) brightness(80%);
 				}
 
 				@keyframes scaleUp {

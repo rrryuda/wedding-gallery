@@ -45,7 +45,7 @@ const SectionHero = () => {
 
       {/* Scroll Guide */}
       <motion.p className="text -scroll" initial={{ x: '-50%', y: '100%', opacity: 0 }} animate={{ y: '0%', opacity: 0.5 }} style={{ opacity: scrollOpacity }} transition={{ duration: 0.4, delay: 0.6 }}>
-        스크롤해서 보기 ↓
+        ↓ 스크롤해서 보기
       </motion.p>
 
       {/* Hero */}
@@ -54,7 +54,7 @@ const SectionHero = () => {
         {/* Title */}
         <motion.div className="title" initial={{ y: '100%', opacity: 0 }} animate={{ y: '0%', opacity: 1 }} transition={{ duration: 0.4, delay: 0.6 }}>
           <span>Shawn</span>
-          <motion.div className="-glyph" initial={{ y: '0%' }} animate={{ y: '-50%' }} transition={{ ease: "anticipate", duration: 0.4, delay: 1.2 }}>
+          <motion.div className="-glyph" initial={{ y: '0%' }} animate={{ y: '-50%' }} transition={{ ease: "anticipate", duration: 0.4, delay: 1.4 }}>
             <span>&</span>
             <span>♥</span>
           </motion.div>

@@ -32,8 +32,8 @@ const App = () => {
       {/* Intro */}
       <Section config="intro">
         <Cell>
-          <Text>2125년 3월 1일 목요일 오후 3시</Text>
-          <Text type="a" href="https://map.naver.com/p?c=15.00,0,0,0,dh">대한민국 국민호텔 3층</Text>
+          <Text config="-dim">2125년 3월 1일 목요일 오후 3시</Text>
+          <Text config="-dim" type="a" href="https://map.naver.com/p?c=15.00,0,0,0,dh">대한민국 국민호텔 3층</Text>
         </Cell>
         <h2>19년 2월 늦겨울, 찬바람을 뚫고 들어온 따사로운 봄바람같은 서로를 만났습니다. 이제는 그동안 사랑의 결실을 맺습니다.</h2>
       </Section>
