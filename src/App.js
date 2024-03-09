@@ -108,7 +108,7 @@ const App = () => {
           <h3>유승현</h3>
           <Cell config="-index">
             <Text config="-subtext -dim">전화</Text>
-            <Text>010-1234-1234</Text>
+            <Text>010-4245-8923</Text>
           </Cell>
           <Cell config="-index">
             <Text config="-subtext -dim">계좌</Text>
@@ -119,7 +119,7 @@ const App = () => {
           <h3>신은정</h3>
           <Cell config="-index">
             <Text config="-subtext -dim">전화</Text>
-            <Text>010-1234-1234</Text>
+            <Text>010-3498-0122</Text>
           </Cell>
           <Cell config="-index">
             <Text config="-subtext -dim">계좌</Text>

@@ -1,3 +1,21 @@
+// Guide
+.invite,
+.scroll {
+	position: fixed;
+	z-index: 999;
+	left: 50%;
+	will-change: transform, opacity;
+	pointer-events: none;
+}
+
+.invite {
+	top: 2rem;
+}
+
+.scroll {
+	bottom: 2rem;
+}
+
 // SectionHero
 section.hero {
 	display: flex;
@@ -7,85 +25,18 @@ section.hero {
 
 	.title {
 		display: flex;
-		flex-direction: column;
-		align-items: center;
+		align-items: flex-start;
 		height: 1em;
 		font-size: 12vw;
 		font-weight: 550;
 		line-height: 1;
+		will-change: transform, opacity;
 		overflow: hidden;
 
-		.-container {
+		.-glyph {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-			transform: translate3d(0, 100%, 0);
-			opacity: 0;
-			animation: moveUp .6s var(--ease) forwards;
-
-			@keyframes moveUp {
-				0% {
-					transform: translate3d(0, 100%, 0);
-					opacity: 0;
-				}
-
-				100% {
-					transform: translate3d(0, 0, 0);
-					opacity: 1;
-				}
-			}
-
-			.-name {
-				display: flex;
-				flex-direction: row;
-				align-items: flex-start;
-				height: 1em;
-				transform: translate3d(0, 0, 0);
-				animation: moveUp3 .6s var(--ease) 1.2s forwards;
-
-				@keyframes moveUp3 {
-					0% {
-						transform: translate3d(0, 0, 0);
-					}
-
-					100% {
-						transform: translate3d(0, -100%, 0);
-					}
-				}
-
-				.-mark {
-					display: flex;
-					flex-direction: column;
-					align-items: center;
-					transform: translate3d(0, 0, 0);
-					animation: moveUp2 .6s var(--ease) .6s forwards;
-
-					@keyframes moveUp2 {
-						0% {
-							transform: translate3d(0, 0, 0);
-						}
-
-						100% {
-							transform: translate3d(0, -50%, 0);
-						}
-					}
-				}
-			}
-
-			.-catch {
-				transform: translate3d(0, 0, 0);
-				animation: moveUp3 .6s var(--ease) 1.2s forwards;
-
-				@keyframes moveUp3 {
-					0% {
-						transform: translate3d(0, 0, 0);
-					}
-
-					100% {
-						transform: translate3d(0, -100%, 0);
-					}
-				}
-			}
 		}
 	}
 
@@ -107,17 +58,6 @@ section.hero {
 			width: 86.4rem;
 			height: 54rem;
 			will-change: transform;
-			animation: slideIn 32s linear infinite;
-
-			@keyframes slideIn {
-				0% {
-					transform: translate3d(0, 0, 0);
-				}
-
-				100% {
-					transform: translate3d(-100%, 0, 0);
-				}
-			}
 
 			div {
 				position: absolute;
@@ -165,7 +105,7 @@ section.hero {
 					image-rendering: auto;
 					will-change: transform, opacity;
 					opacity: 0;
-					animation: scaleUp 1.2s var(--ease) .4s forwards;
+					animation: scaleUp 1s ease 1s forwards;
 				}
 
 				@keyframes scaleUp {
@@ -182,14 +122,4 @@ section.hero {
 			}
 		}
 	}
-}
-
-#gScroll {
-	position: fixed;
-	z-index: 999;
-	left: 50%;
-	bottom: 2rem;
-	will-change: opacity;
-	transform: translate3d(-50%, 0, 0);
-	pointer-events: none;
 }

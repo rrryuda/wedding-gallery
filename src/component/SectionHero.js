@@ -25,57 +25,68 @@ const SectionHero = () => {
 
   // Opacity
   const { scrollY } = useScroll();
-  const opacity = useTransform(scrollY, [0, 200], [0.5, 0]);
+  const inviteOpacity = useTransform(scrollY, [0, 200], [1, 0]);
+  const scrollOpacity = useTransform(scrollY, [0, 100], [0.5, 0]);
+
+  // Infinite Slide
+  const slideInVariants = {
+    hidden: { x: '0%' },
+    visible: {
+      x: '-100%',
+      transition: { duration: 24, ease: "linear", repeat: Infinity }
+    }
+  };
 
   return (
     <>
+      {/* Intro */}
+      <motion.div className="invite" initial={{ x: '-50%', y: '-100%', opacity: 0 }} animate={{ y: '0%', opacity: 1 }} style={{ opacity: inviteOpacity }} transition={{ duration: 0.6 }}>
+        <Text>귀하를 초대합니다.</Text>
+      </motion.div>
+
+      {/* Scroll Guide */}
+      <motion.div className="scroll" initial={{ x: '-50%', y: '100%', opacity: 0 }} animate={{ y: '0%', opacity: 0.5 }} style={{ opacity: scrollOpacity }} transition={{ duration: 0.6, delay: 0.8 }}>
+        <Text>스크롤해서 보기</Text>
+      </motion.div>
+
+      {/* Hero */}
       <Section config="hero">
 
         {/* Title */}
-        <div className="title">
-          <div className="-container">
-            <div className="-name">
-              <span>승현</span>
-              <div className="-mark">
-                <span>&</span>
-                <span>♥</span>
-              </div>
-              <span>은정</span>
-            </div>
-            <span className="-catch">결혼합니다</span>
-          </div>
-        </div>
+        <motion.div className="title" initial={{ y: '100%', opacity: 0 }} animate={{ y: '0%', opacity: 1 }} transition={{ duration: 0.6, delay: 0.4 }}>
+          <span>Shawn</span>
+          <motion.div className="-glyph" initial={{ y: '0%' }} animate={{ y: '-50%' }} transition={{ duration: 0.4, delay: 1.2 }}>
+            <span>&</span>
+            <span>♥</span>
+          </motion.div>
+          <span>EJ</span>
+        </motion.div>
 
         {/* Image */}
         <motion.ul style={{ y: yRange }}>
-          <li>
+          <motion.li variants={slideInVariants} initial="hidden" animate="visible">
             <div><img src={img01} alt="" /></div>
             <div><img src={img02} alt="" /></div>
             <div><img src={img03} alt="" /></div>
             <div><img src={img04} alt="" /></div>
             <div><img src={img05} alt="" /></div>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li variants={slideInVariants} initial="hidden" animate="visible">
             <div><img src={img01} alt="" /></div>
             <div><img src={img02} alt="" /></div>
             <div><img src={img03} alt="" /></div>
             <div><img src={img04} alt="" /></div>
             <div><img src={img05} alt="" /></div>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li variants={slideInVariants} initial="hidden" animate="visible">
             <div><img src={img01} alt="" /></div>
             <div><img src={img02} alt="" /></div>
             <div><img src={img03} alt="" /></div>
             <div><img src={img04} alt="" /></div>
             <div><img src={img05} alt="" /></div>
-          </li>
+          </motion.li>
         </motion.ul>
       </Section>
-
-      {/* Guide */}
-      <motion.div id="gScroll" style={{ opacity }}>
-        <Text>스크롤해서 보기</Text>
-      </motion.div>
     </>
   );
 }
