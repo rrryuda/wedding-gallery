@@ -24,9 +24,9 @@ const Header = () => {
 
   return (
     <header>
-      <a href="#gallery" onClick={gallery}>갤러리</a>
-      <a href="#map" onClick={map}>오시는길</a>
-      <a href="#contact" onClick={contact}>연락처</a>
+      <span onClick={gallery}>갤러리</span>
+      <span onClick={map}>오시는길</span>
+      <span onClick={contact}>연락처</span>
     </header>
   );
 }

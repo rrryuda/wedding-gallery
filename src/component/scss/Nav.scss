@@ -6,11 +6,12 @@ footer {
 	padding: 1rem var(--margin);
 	background: var(--background-color);
 
-	a {
+	span {
 		font-size: var(--subtext-size);
 		font-weight: var(--subtext-weight);
 		letter-spacing: var(--subtext-spacing);
 		line-height: var(--subtext-height);
+		cursor: pointer;
 	}
 }
 

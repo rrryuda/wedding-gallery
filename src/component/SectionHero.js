@@ -1,8 +1,10 @@
 // React
 import React from 'react';
+import { motion, useScroll, useTransform } from 'framer-motion';
 
 // Component
 import Section from './Section';
+import Text from './Text';
 
 // CSS
 import './css/SectionHero.css';
@@ -17,40 +19,64 @@ import img05 from './source/placeholder-05.jpg';
 // SectionHero
 const SectionHero = () => {
 
+  // Parallax
+  const { scrollYProgress } = useScroll();
+  const yRange = useTransform(scrollYProgress, [0, 0.5], ['0%', '100%']);
+
+  // Opacity
+  const { scrollY } = useScroll();
+  const opacity = useTransform(scrollY, [0, 200], [0.5, 0]);
+
   return (
-    <Section config="hero">
-      <div className="title">
-        <div><span>우리</span></div>
-        <div><span>결혼해요</span></div>
-      </div>
-      <span className="greeting">귀하를 초대합니다</span>
-      <span className="guide">스크롤해서 더보기</span>
-      <div className="rimg">
-        <ul>
+    <>
+      <Section config="hero">
+
+        {/* Title */}
+        <div className="title">
+          <div className="-container">
+            <div className="-name">
+              <span>승현</span>
+              <div className="-mark">
+                <span>&</span>
+                <span>♥</span>
+              </div>
+              <span>은정</span>
+            </div>
+            <span className="-catch">결혼합니다</span>
+          </div>
+        </div>
+
+        {/* Image */}
+        <motion.ul style={{ y: yRange }}>
           <li>
-            <img src={img01} alt="" />
-            <img src={img02} alt="" />
-            <img src={img03} alt="" />
-            <img src={img04} alt="" />
-            <img src={img05} alt="" />
+            <div><img src={img01} alt="" /></div>
+            <div><img src={img02} alt="" /></div>
+            <div><img src={img03} alt="" /></div>
+            <div><img src={img04} alt="" /></div>
+            <div><img src={img05} alt="" /></div>
           </li>
           <li>
-            <img src={img01} alt="" />
-            <img src={img02} alt="" />
-            <img src={img03} alt="" />
-            <img src={img04} alt="" />
-            <img src={img05} alt="" />
+            <div><img src={img01} alt="" /></div>
+            <div><img src={img02} alt="" /></div>
+            <div><img src={img03} alt="" /></div>
+            <div><img src={img04} alt="" /></div>
+            <div><img src={img05} alt="" /></div>
           </li>
           <li>
-            <img src={img01} alt="" />
-            <img src={img02} alt="" />
-            <img src={img03} alt="" />
-            <img src={img04} alt="" />
-            <img src={img05} alt="" />
+            <div><img src={img01} alt="" /></div>
+            <div><img src={img02} alt="" /></div>
+            <div><img src={img03} alt="" /></div>
+            <div><img src={img04} alt="" /></div>
+            <div><img src={img05} alt="" /></div>
           </li>
-        </ul>
-      </div>
-    </Section>
+        </motion.ul>
+      </Section>
+
+      {/* Guide */}
+      <motion.div id="gScroll" style={{ opacity }}>
+        <Text>스크롤해서 보기</Text>
+      </motion.div>
+    </>
   );
 }
 

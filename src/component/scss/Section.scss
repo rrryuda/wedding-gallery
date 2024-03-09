@@ -4,8 +4,6 @@ section {
 	z-index: 1;
 	width: 100%;
 	padding: var(--margin-row) var(--margin);
-	background: var(--background-color);
-	overflow: hidden;
 
 	&.intro {
 		display: grid;
@@ -23,7 +21,6 @@ section {
 
 		@media screen and (max-width: 768px) {
 			grid-template-columns: 100%;
-			padding-top: unset;
 		}
 	}
 

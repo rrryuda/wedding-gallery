@@ -10,7 +10,6 @@ import Cell from './component/Cell';
 import Footer from './component/Footer';
 import Header from './component/Header';
 import Img from './component/Img';
-import MetaTheme from './component/MetaTheme';
 import SectionHero from './component/SectionHero';
 import Section from './component/Section';
 import Text from './component/Text';
@@ -25,7 +24,6 @@ const App = () => {
 
   return (
     <Lenis root>
-      <MetaTheme />
 
       {/* Hero */}
       <SectionHero />
@@ -61,10 +59,10 @@ const App = () => {
               <Text config="-subheadline">승현</Text>
             </Cell>
             <Cell config="-index">
-              <Text config="-subheadline">최수종</Text>
+              <Text config="-subheadline">신수종</Text>
               <Text config="-subheadline">하희라</Text>
               <Text config="-dim">의 장녀</Text>
-              <Text config="-subheadline">은희</Text>
+              <Text config="-subheadline">은정</Text>
             </Cell>
           </Cell>
         </Cell>
@@ -118,7 +116,7 @@ const App = () => {
           </Cell>
         </Cell>
         <Cell config="-list">
-          <h3>최은희</h3>
+          <h3>신은정</h3>
           <Cell config="-index">
             <Text config="-subtext -dim">전화</Text>
             <Text>010-1234-1234</Text>
