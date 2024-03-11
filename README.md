@@ -1,1 +1,1 @@
-# invitation-v1
+# wedding-gallery
