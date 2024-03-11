@@ -1,20 +1,24 @@
 {
   "files": {
-    "main.css": "/wedding-gallery/static/css/main.241882de.css",
-    "main.js": "/wedding-gallery/static/js/main.833fe055.js",
+    "main.css": "/wedding-gallery/static/css/main.5402379f.css",
+    "main.js": "/wedding-gallery/static/js/main.88b0f4b8.js",
     "static/js/453.84959bf2.chunk.js": "/wedding-gallery/static/js/453.84959bf2.chunk.js",
-    "static/media/placeholder-03.jpg": "/wedding-gallery/static/media/placeholder-03.3cc9dfa6066718c875d7.jpg",
+    "static/media/placeholder-03.jpg": "/wedding-gallery/static/media/placeholder-03.a00eb0ccd7437bec28f1.jpg",
     "static/media/placeholder-05.jpg": "/wedding-gallery/static/media/placeholder-05.9d49ed2988121f50f335.jpg",
-    "static/media/placeholder-02.jpg": "/wedding-gallery/static/media/placeholder-02.40f025d1d9624fe4dcda.jpg",
-    "static/media/placeholder-01.jpg": "/wedding-gallery/static/media/placeholder-01.2131c81d1cd9a3b11d12.jpg",
+    "static/media/placeholder-02.jpg": "/wedding-gallery/static/media/placeholder-02.7e4654838e54adc4db36.jpg",
+    "static/media/placeholder-01.jpg": "/wedding-gallery/static/media/placeholder-01.30a470393398acb9a818.jpg",
     "static/media/placeholder-04.jpg": "/wedding-gallery/static/media/placeholder-04.6f83bb9b5e9e7a34e652.jpg",
+    "static/media/ph-219.png": "/wedding-gallery/static/media/ph-219.f50bfb663b92724a8b44.png",
+    "static/media/ph-11.png": "/wedding-gallery/static/media/ph-11.105f61bae0ec6604f6ca.png",
+    "static/media/ph-169.png": "/wedding-gallery/static/media/ph-169.dedcc7a0c841aa82b322.png",
+    "static/media/ph-43.png": "/wedding-gallery/static/media/ph-43.50ca7f25e7881044dbd1.png",
     "index.html": "/wedding-gallery/index.html",
-    "main.241882de.css.map": "/wedding-gallery/static/css/main.241882de.css.map",
-    "main.833fe055.js.map": "/wedding-gallery/static/js/main.833fe055.js.map",
+    "main.5402379f.css.map": "/wedding-gallery/static/css/main.5402379f.css.map",
+    "main.88b0f4b8.js.map": "/wedding-gallery/static/js/main.88b0f4b8.js.map",
     "453.84959bf2.chunk.js.map": "/wedding-gallery/static/js/453.84959bf2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.241882de.css",
-    "static/js/main.833fe055.js"
+    "static/css/main.5402379f.css",
+    "static/js/main.88b0f4b8.js"
   ]
 }
