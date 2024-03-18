@@ -1,34 +1,29 @@
 {
   "files": {
-    "main.css": "/wedding-gallery/static/css/main.c6027555.css",
-    "main.js": "/wedding-gallery/static/js/main.0bfc10ad.js",
+    "main.css": "/wedding-gallery/static/css/main.37588bb5.css",
+    "main.js": "/wedding-gallery/static/js/main.4b34cb36.js",
     "static/js/453.84959bf2.chunk.js": "/wedding-gallery/static/js/453.84959bf2.chunk.js",
     "static/media/card-04.jpg": "/wedding-gallery/static/media/card-04.f2881b340c3bcd7acfb7.jpg",
     "static/media/PretendardVariable.woff2": "/wedding-gallery/static/media/PretendardVariable.2bc582461caf4e05b51d.woff2",
     "static/media/card-03.jpg": "/wedding-gallery/static/media/card-03.0831fe85f73259e0e6fe.jpg",
-    "static/media/hero-04.jpg": "/wedding-gallery/static/media/hero-04.0f2dd029fb45d7b62755.jpg",
     "static/media/card-02.jpg": "/wedding-gallery/static/media/card-02.6059e70f84e56935060a.jpg",
     "static/media/card-01.jpg": "/wedding-gallery/static/media/card-01.5c42096763639d268d4a.jpg",
-    "static/media/hero-05.jpg": "/wedding-gallery/static/media/hero-05.b31f1627f8e45cfe26cf.jpg",
     "static/media/card-05.jpg": "/wedding-gallery/static/media/card-05.3cb6a0efac01b54c86fa.jpg",
     "static/media/ph-11.jpg": "/wedding-gallery/static/media/ph-11.8860462dd8cbe78f580f.jpg",
-    "static/media/hero-03.jpg": "/wedding-gallery/static/media/hero-03.7100011c89abdc3954a2.jpg",
-    "static/media/hero-02.jpg": "/wedding-gallery/static/media/hero-02.338d33d317430d7bb909.jpg",
     "static/media/map.jpg": "/wedding-gallery/static/media/map.af4bc05606682cb3dae0.jpg",
     "static/media/ph-169.jpg": "/wedding-gallery/static/media/ph-169.af4bc05606682cb3dae0.jpg",
-    "static/media/hero-01.jpg": "/wedding-gallery/static/media/hero-01.c2a8be8448ba7af40dbf.jpg",
     "static/media/ph-43.jpg": "/wedding-gallery/static/media/ph-43.0b6bd409c58299cafafd.jpg",
     "static/media/InterVariable.woff2": "/wedding-gallery/static/media/InterVariable.a0e477f2f1f9d2376fde.woff2",
     "static/media/ph-219.jpg": "/wedding-gallery/static/media/ph-219.846cb9485a28ff921c36.jpg",
     "static/media/LibreCaslonCondensed-SemiBoldItalic.woff2": "/wedding-gallery/static/media/LibreCaslonCondensed-SemiBoldItalic.707a67f058b020cf0065.woff2",
     "static/media/LibreCaslonCondensed-MediumItalic.woff2": "/wedding-gallery/static/media/LibreCaslonCondensed-MediumItalic.b16c5d42ab7e99cd5cd8.woff2",
     "index.html": "/wedding-gallery/index.html",
-    "main.c6027555.css.map": "/wedding-gallery/static/css/main.c6027555.css.map",
-    "main.0bfc10ad.js.map": "/wedding-gallery/static/js/main.0bfc10ad.js.map",
+    "main.37588bb5.css.map": "/wedding-gallery/static/css/main.37588bb5.css.map",
+    "main.4b34cb36.js.map": "/wedding-gallery/static/js/main.4b34cb36.js.map",
     "453.84959bf2.chunk.js.map": "/wedding-gallery/static/js/453.84959bf2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c6027555.css",
-    "static/js/main.0bfc10ad.js"
+    "static/css/main.37588bb5.css",
+    "static/js/main.4b34cb36.js"
   ]
 }
