@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/wedding-gallery/static/css/main.beab3608.css",
+    "main.css": "/wedding-gallery/static/css/main.7f802ffa.css",
     "main.js": "/wedding-gallery/static/js/main.8b85c891.js",
     "static/js/453.84959bf2.chunk.js": "/wedding-gallery/static/js/453.84959bf2.chunk.js",
     "static/media/PretendardVariable.woff2": "/wedding-gallery/static/media/PretendardVariable.2bc582461caf4e05b51d.woff2",
@@ -19,12 +19,12 @@
     "static/media/LibreCaslonCondensed-SemiBoldItalic.woff2": "/wedding-gallery/static/media/LibreCaslonCondensed-SemiBoldItalic.707a67f058b020cf0065.woff2",
     "static/media/LibreCaslonCondensed-MediumItalic.woff2": "/wedding-gallery/static/media/LibreCaslonCondensed-MediumItalic.b16c5d42ab7e99cd5cd8.woff2",
     "index.html": "/wedding-gallery/index.html",
-    "main.beab3608.css.map": "/wedding-gallery/static/css/main.beab3608.css.map",
+    "main.7f802ffa.css.map": "/wedding-gallery/static/css/main.7f802ffa.css.map",
     "main.8b85c891.js.map": "/wedding-gallery/static/js/main.8b85c891.js.map",
     "453.84959bf2.chunk.js.map": "/wedding-gallery/static/js/453.84959bf2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.beab3608.css",
+    "static/css/main.7f802ffa.css",
     "static/js/main.8b85c891.js"
   ]
 }
